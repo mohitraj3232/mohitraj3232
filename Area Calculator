@@ -1,0 +1,43 @@
+print("What is your object?")
+print("Cubeoid")
+print("Cube")
+print("Cone")
+print("Sphere")
+print("Hemisphere")
+
+x = str(input("Please select one: "))
+if x == ("Cubeoid"):
+    a= float(input("length-"))
+    b= float(input("Breadth-"))
+    c= float(input("Height-"))
+    Area= float((2*(a*b+b*c+c*a)))
+    print("The area according to the meadurements is:" , Area , "square meter")
+
+
+
+elif x == ("Cube"):
+    a= float(input("Side-"))
+    Area= float((4*(a**2)))
+    print("The area according to the meadurements is:" , Area , "square meter")
+
+
+elif x == ("Cone"):
+    a= float(input("Radius-"))
+    b= float(input("Height-"))
+    Area= float((3.14*a*(a+b)))
+    print("The area according to the meadurements is:" , Area , "square meter")
+
+
+elif x == ("Sphere"):
+    a= float(input("Radius-"))
+    Area= float((3.14*4*(a**2)))
+    print("The area according to the meadurements is:" , Area , "square meter")
+
+
+elif x == ("Hemisphere"):
+    a= float(input("Radius-"))
+    Area= float((3.14*3*(a**2)))
+    print("The area according to the meadurements is:" , Area , "square meter")
+else:
+    print("SORRY")
+
